@@ -482,21 +482,6 @@ contrast(emleaf, method = "dunnett", adjust = "dunnett", by = c("species", "year
 
 
 
-##coeff with NS interactions removed
-#plot_model(total.leaf.area.model, type = "est", sort.est = FALSE, vline.color = "grey",
-#           terms = c("treatmentA", "treatmentB", "treatmentC", "speciesASSU", 
-#                     "speciesCAMI","speciesPOAN", "year2018", "year2019",
-#                     "treatmentC:speciesASSU", "treatmentA:speciesASSU",
-#                     "speciesPOAN:year2018", "treatmentA:speciesPOAN",
-#                     "speciesPOAN:year2019"),
-#           group.terms = c(1,2,1,2,2,1,2,1,1,1,1,1,1),
-#           order.terms = c(1,2,3,4,5,6,7,8,9,10,11,12,13),
-#           colors = c("black", "grey"), title = 
-#             "Coeff Estimates: Total Leaf Area Model", dot.size = 5,
-#           line.size = 2) +
-#  theme_classic(30) 
-#ggsave("Figures/modeloutputs_totalleafarea.png",  height=9, width=16)
-
 ####PUBLICATION FIGURE####
 
 #Plot least squares mean for each level of categorical variable, but 
@@ -616,22 +601,6 @@ plot(emdisplay, comparison = TRUE)
 #species and year
 contrast(emdisplay, method = "dunnett", adjust = "dunnett", by = c("species", "year"))
 
-
-##coeff with NS interactions removed
-#plot_model(total.display.area.model, type = "est", sort.est = FALSE, vline.color = "grey",
-#           terms = c("treatmentA", "treatmentB", "treatmentC", "speciesASSU", 
-#                     "speciesCAMI","speciesPOAN", "year2018", "year2019",
-#                     "treatmentB:year2018", "treatmentA:speciesASSU",
-#                     "speciesCAMI:year2019", "speciesPOAN:year2018",
-#                     "speciesASSU:year2018", "speciesPOAN:year2019",
-#                     "speciesASSU:year2019"),
-#           group.terms = c(2,1,2,1,1,1,1,1,1,1,1,1,1,1,1),
-#           order.terms = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15),
-#           colors = c("black", "grey"), title = 
-#             "Coeff Estimates: Display Area", dot.size = 5,
-#           line.size = 2) +
-#  theme_classic(30) 
-#ggsave("Figures/modeloutputs_totaldisplayarea.png",  height=9, width=16)
 
 ####PUBLICATION FIGURE####
 
