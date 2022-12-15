@@ -19,7 +19,7 @@ Details for: 2017leafisotopes.csv
 
 * Dimensions: 630 rows x 10 columns
 
-*Variables: 
+* Variables: 
 	* year: The year (YYYY) that each leaf sample was collected
 	* block: The experimental block (possible values 1-25) that each treatment plot belongs to
 	* treatment: The experimental treatment applied to a 1 x 1 m plot; A = pink salmon (Oncorhynchus gorbuscha) carcass, B = drift seaweed (Fucus distichus), C = both salmon carcass and seaweed, D = control
@@ -43,7 +43,7 @@ Details for: focaltraits.csv
 
 * Dimensions: 2196 rows x 34 columns
 
-*Variables: 
+* Variables: 
 	* id: An amalgamated variable comprised of the specimen's sampling year, block, treatment, and species in a 13-character ID (YYYY-blockplot-species-individual)
 	* year: The year (YYYY) that each leaf sample was collected
 	* date: The date (dd-Month-yy) that an individual's leaf and floral display size was measured
